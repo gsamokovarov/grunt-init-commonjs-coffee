@@ -1,0 +1,4 @@
+{
+  "src/name.coffee": "src/{%= name %}.coffee",
+  "test/name_test.coffee": "test/{%= name %}_test.coffee"
+}

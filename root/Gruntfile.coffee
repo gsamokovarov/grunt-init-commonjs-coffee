@@ -1,16 +1,16 @@
-module.exports = (grunt) ->
+module.exports = (grunt) -}
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
 
     concat:
       dist:
-        src: ['lib/<%= pkg.name %>.js']
-        dest: 'dist/<%= pkg.name %>.js'
+        src: ['lib/{%= pkg.name %}.js']
+        dest: 'dist/{%= pkg.name %}.js'
 
     uglify:
       dist:
-        src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.min.js'
+        src: '{%= concat.dist.dest %}',
+        dest: 'dist/{%= pkg.name %}.min.js'
 
     coffee:
       glob_to_multiple:
